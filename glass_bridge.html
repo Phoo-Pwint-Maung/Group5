@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glass Bridge</title>
+    <script src="https://kit.fontawesome.com/768f875d46.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./glass_bridge.css" />
+    <link rel="stylesheet" href="./glass_bridge_popup.css" />
+    <link rel="stylesheet" href="./howtoPlay.css" />
+    <script src="./glass_bridge.js" defer></script>
+  </head>
+  <body>
+    <!-- Right corner "Home Button"  -->
+    <a href="./welcome.html">
+      <img src="./image/Home_blue.png" alt="" class="home" />
+    </a>
+    <!-- Right corner "Restart Button" -->
+    <img
+      src="./image/restart_blue.png"
+      alt="home_button_image"
+      class="restart_blue"
+      id="restart_blue"
+    />
+    <!-- Glass -->
+    <button class="winning_stage" id="winning_stage">
+      <img src="./image/You_Win_Pink.png" alt="" id="winning_stage_text">
+    </button>    
+    <div class="row_five">
+      <img src="./image/doll_girl-removebg-preview.png" alt="" id="life_girl_1">
+      <img src="./image/doll_girl-removebg-preview.png" alt="" id="life_girl_2">
+      <img src="./image/doll_girl-removebg-preview.png" alt="" id="life_girl_3">
+      <div class="glass 5" id="five_one">
+        <img src="./image/glasspic.jpg" alt="" class="glasspic1" />
+      </div>
+
+      <div class="glass 5" id="five_two">
+        <img src="./image/glasspic.jpg" alt="" class="glasspic2" />
+      </div>
+    </div>
+    <br />
+    <div class="row_four">
+      <div class="glass 4" id="four_one">
+        <img src="./image/glasspic.jpg" alt="" class="glasspic1" />
+      </div>
+      <div class="glass 4" id="four_two">
+        <img src="./image/glasspic.jpg" alt="" class="glasspic2" />
+      </div>
+    </div>
+    <br />
+    <div class="row_three">
+      <div class="glass 3" id="three_one">
+        <img src="./image/glasspic.jpg" alt="" class="glasspic1" />
+      </div>
+      <div class="glass 3" id="three_two">
+        <img src="./image/glasspic.jpg" alt="" class="glasspic2" />
+      </div>
+    </div>
+    <br />
+    <div class="row_two">
+      <div class="glass 2" id="two_one">
+        <img src="./image/glasspic.jpg" alt="" class="glasspic1" />
+      </div>
+      <div class="glass 2" id="two_two">
+        <img src="./image/glasspic.jpg" alt="" class="glasspic2" />
+      </div>
+    </div>
+    <br />
+    <div class="row_one">
+      <div class="glass 1" id="one_one">
+        <img src="./image/glasspic.jpg" alt="" class="glasspic1" />
+      </div>
+      <div class="glass 1" id="one_two">
+        <img src="./image/glasspic.jpg" alt="" class="glasspic2" />
+      </div>
+    </div>
+    <!-- Player -->
+    <div id="player" class="player">
+      <img src="./image/doll_girl_back.png" alt="" class="doll" />
+    </div>
+    <!-- GameOver & GameWin Popup -->
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <a href="" id="GameOver">
+          <img src="./image/Game Over.png" alt="" id="caption" />
+        </a>
+        <a class="restart" id="restart">
+          <img src="./image/restart.png" alt="" class="restart_text" />
+        </a>
+        <a class="home_btn" id="home_btn" href="./welcome.html">
+          <img src="./image/sgg.png" alt="" class="home_text" />
+        </a>
+      </div>
+    </div>
+    <!-- How to Play Explain Popup -->
+    <div id="how_to_play_popup" class="overlay1">
+      <div class="popup_htp">
+        <a href="" id="how_to_play_card">
+          <img src="./image/Group 5.png" alt="" id="caption" />
+        </a>
+        <a class="start1" id="start1">
+          <img src="./image/start.png" alt="" class="start_text1" />
+        </a>
+      </div>
+    </div>
+    <!-- Audio -->
+    <audio id="winner" src="./image/winnersound.mp3"></audio>
+    <audio id="gameover" src="./image/gamesquidsound.mp3"></audio>
+    <audio id="crash" src="./image/impact-glass-object-small-break-01-sound-effect-58297730.mp3"></audio>
+    <audio id="glassmove" src="./image/menu-button-2-sound-effect-33505250.mp3"></audio>
+
+  </body>
+</html>

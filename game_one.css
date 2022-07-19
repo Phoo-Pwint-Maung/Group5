@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  background-color: black;
+}
+/* Home Button */
+.sg {
+  width: 100px;
+  position: absolute;
+  top: 8%;
+  right: 25%;
+  cursor: pointer;
+}
+/* Restart Button */
+.restart_btn,#bgmusic_play, #pause {
+  width: 150px;
+  position: absolute;
+  top: 8%;
+  right: 10%;
+  padding-left: 30px;
+  cursor: pointer;
+  border-left: 3px solid #e63886;
+}
+.block {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #e63886;
+  display: inline-block;
+  box-shadow: 0 0 70px #e63886;
+  margin-top: 30%;
+  background-color: rgba(255, 255, 128, 0.6);
+}
+.human {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  border: 3px solid #ed1477;
+  background-color: rgba(255, 255, 128, 0.6);
+  position: absolute;
+  bottom: 40%;
+}
+.image {
+  width: 80px;
+  height: 80px;
+}
+#block {
+  transform: translate(150px, 0);
+}
+#block1 {
+  transform: translate(250px, 0);
+}
+#block2 {
+  transform: translate(350px, 0);
+}
+#block3 {
+  transform: translate(450px, 0);
+}
+#block4 {
+  transform: translate(550px, 0);
+}
+.winner {
+  width: 150px;
+  height: 20px;
+  transform: translate(650px, 0);
+  display: inline-block;
+  font-size: 20px;
+}
+.Win_text {
+  width: 150px;
+}
+#pause,#bgmusic_play{
+  right: 90%;
+  width: 90px;
+  border: none;
+}
+#bgmusic_play{
+  width:70px;
+}
+@keyframes movement1 {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(50px, -100px);
+  }
+  100% {
+    transform: translate(150px, 0);
+  }
+}
+@keyframes movement2 {
+  0% {
+    transform: translate(150px, 0);
+  }
+  50% {
+    transform: translate(250px, -100px);
+  }
+  100% {
+    transform: translate(350px, 0);
+  }
+}
+@keyframes movement3 {
+  0% {
+    transform: translate(350px, 0);
+  }
+  50% {
+    transform: translate(450px, -100px);
+  }
+  100% {
+    transform: translate(560px, 0);
+  }
+}
+@keyframes movement4 {
+  0% {
+    transform: translate(560px, 0);
+  }
+  50% {
+    transform: translate(650px, -100px);
+  }
+  100% {
+    transform: translate(760px, 0);
+  }
+}
+@keyframes movement5 {
+  0% {
+    transform: translate(760px, 0);
+  }
+  50% {
+    transform: translate(850px, -100px);
+  }
+  100% {
+    transform: translate(960px, 0);
+  }
+}
+@keyframes movement6 {
+  0% {
+    transform: translate(960px, 0);
+  }
+  25% {
+    transform: translate(1000px, -100px);
+  }
+  50% {
+    transform: translate(1050px, -100px);
+  }
+  75% {
+    transform: translate(1150px, -100px);
+  }
+  100% {
+    transform: translate(1200px, 50px);
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game One</title>
+    <link rel="stylesheet" href="./game_one.css" />
+    <link rel="stylesheet" href="./popup.css" />
+    <script src="./game_one.js" defer></script>
+  </head>
+  <body>
+    <!-- Home Button -->
+    <a href="./welcome.html">
+      <img src="./image/sgg.png" alt="sgg" class="sg" />
+    </a>
+    <!-- Restart Button -->
+    <a id="restart_btn">
+      <img
+        src="./image/restart.png"
+        alt=""
+        class="restart_btn"
+        id="restart_"
+      />
+    </a>
+    <!-- Human Move Block -->
+    <div class="box">
+      <img src="./image/umbrella.jpg" alt="" id="human" class="human" width="80px" />
+      <div>
+        <!-- Blocks -->
+        <img src="" alt="" class="block" id="block" width="80px" />
+        <img src="" alt="" class="block" id="block1" width="80px" />
+        <img src="" alt="" class="block" id="block2" width="80px" />
+        <img src="" alt="" class="block" id="block3" width="80px" />
+        <img src="" alt="" class="block" id="block4" width="80px" />
+        <!-- Background Music Pause and Play Display -->
+    <img src="./image/bg music.png" alt="" id="bgmusic_play">
+    <img src="./image/pause.png" alt="" id="pause">
+        <!-- Winner Display -->
+        <div class="winner">
+          <img src="./image/winner.png" alt="" class="Win_text" />
+        </div>
+      </div>
+    </div>
+    <!-- PopUp Display -->
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <!-- Restart Button -->
+        <a class="restart" id="restart">
+          <img src="./image/restart.png" alt="" class="restart_text" />
+        </a>
+        <!-- Home Button -->
+        <a class="home_btn" id="home_btn" href="./welcome.html">
+          <img src="./image/sgg.png" alt="" class="home_text" />
+        </a>
+      </div>
+    </div>
+    
+  </body>
+</html>

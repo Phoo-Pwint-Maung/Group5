@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  background-image: url(./image/mkmkmk.webp);
+  background-position: center;
+  width: 100%;
+}
+.row_one,
+.row_two,
+.row_three,
+.row_four,
+.row_five {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1%;
+}
+.glass {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+#player {
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  bottom: 14%;
+  right: 48%;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
+}
+
+.doll {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  transform: scale(2.5);
+}
+#life_girl_1{
+  width: 100px;
+  position: absolute;
+  left: 3%;
+}
+#life_girl_2{
+  width: 100px;
+  position: absolute;
+  left: 6%;
+}
+#life_girl_3{
+  width: 100px;
+  position: absolute;
+  left:9%;
+}
+.glasspic1 {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  position: absolute;
+  right: 683px;
+  box-shadow: 5px 7px 9px 2px #3863b1, -5px -4px 12px 2px #3863b1;
+  border-radius: 10px;
+  transform: scaleY(-1);
+
+  
+}
+.glasspic2 {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  position: absolute;
+  right: 573px;
+  box-shadow: 5px 7px 9px 2px #3863b1, -5px -4px 12px 2px #3863b1;
+  border-radius: 10px;
+}
+.home,
+.restart_blue , #bgmusic_play, #pause{
+  width: 100px;
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  cursor: pointer;
+  border-bottom: 2px solid #101af3;
+}
+#pause{
+  top: 90%;
+}
+#bgmusic_play{
+  width: 90px;
+  top: 90%;
+}
+.restart_blue {
+  top: 20%;
+}
+
+.winning_stage{
+  position: absolute;
+  top: 10px;
+  height: 8%;
+  background-color: black;
+  width: 20%;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+#winning_stage_text{
+  margin-top: 5px;
+   width: 50%;
+}

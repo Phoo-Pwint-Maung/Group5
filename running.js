@@ -12,17 +12,13 @@ document.getElementById("start1").addEventListener("click", () => {
   document.getElementById("how_to_play_popup").style.visibility = "hidden";
   document.getElementById("green_light").play();
   document.getElementById("green_light_img").style.visibility = "visible";
-   doll_move = setInterval(() => {
-    if (
-      doll.src == "http://127.0.0.1:5500/running_images/black.png"
-    ) {
+  doll_move = setInterval(() => {
+    if (doll.src == "http://127.0.0.1:5500/running_images/black.png") {
       doll.src = "http://127.0.0.1:5500/running_images/red.png";
       document.getElementById("red_light_img").style.visibility = "visible";
       document.getElementById("green_light_img").style.visibility = "hidden";
       document.getElementById("red_light").play();
-    } else if (
-      doll.src == "http://127.0.0.1:5500/running_images/red.png"
-    ) {
+    } else if (doll.src == "http://127.0.0.1:5500/running_images/red.png") {
       doll.src = "http://127.0.0.1:5500/running_images/black.png";
       document.getElementById("red_light_img").style.visibility = "hidden";
       document.getElementById("green_light_img").style.visibility = "visible";
@@ -68,7 +64,6 @@ window.addEventListener("keypress", (event) => {
   // Game over condition
   if (doll.src == "http://127.0.0.1:5500/running_images/red.png") {
     if (y == true) {
-      
       setTimeout(() => {
         document.getElementById("popup1").style.visibility = "visible";
         document.getElementById("gameover").play();

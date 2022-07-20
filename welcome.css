@@ -18,23 +18,23 @@ body {
   left: 3%;
   width: 15%;
 }
-#game1{
+#game1 {
   width: 100%;
   position: absolute;
   bottom: 10%;
   left: 0;
 }
-#game2{
+#game2 {
   height: 110px;
 }
-#game3{
+#game3 {
   width: 90%;
   height: 100%;
 }
-#gameOne_logo{
+#gameOne_logo {
   width: 60%;
 }
-.game{
+.game {
   width: 25%;
   position: absolute;
   left: 3%;
@@ -48,14 +48,13 @@ body {
   text-align: center;
   cursor: pointer;
 }
-.game:hover{
+.game:hover {
   box-shadow: 1rem 1rem 2rem black;
-
 }
-.two{
+.two {
   top: 60%;
 }
-.three{
+.three {
   top: 50%;
   left: 30%;
 }

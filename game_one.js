@@ -8,42 +8,43 @@ let image = [
 let human = document.getElementById("human");
 let block = document.getElementsByClassName("block");
 var myAudio = new Audio("./image/the-squid-game-theme-_-bgm-ringtone.mp3");
-// Background Music 
+// Background Music
 document.getElementById("bgmusic_play").style.visibility = "hidden";
 myAudio.play();
-  document.getElementById("bgmusic_play").addEventListener("click", () => {
-    document.getElementById("pause").style.visibility = "visible";
-    document.getElementById("bgmusic_play").style.visibility = "hidden";
-    if (typeof myAudio.loop == "boolean") {
-      myAudio.loop = true;
-    } else {
-      myAudio.addEventListener(
-        "ended",
-        function () {
-          this.currentTime = 0;
-          this.play();
-        },
-        false
-      );
-    }
-    myAudio.play();
-  });
-  // Background Music Pause
-  document.getElementById("pause").addEventListener("click", () => {
-    document.getElementById("bgmusic_play").style.visibility = "visible";
-    document.getElementById("pause").style.visibility = "hidden";
-    myAudio.pause();
-  });
-// human_random();
+document.getElementById("bgmusic_play").addEventListener("click", () => {
+  document.getElementById("pause").style.visibility = "visible";
+  document.getElementById("bgmusic_play").style.visibility = "hidden";
+  if (typeof myAudio.loop == "boolean") {
+    myAudio.loop = true;
+  } else {
+    myAudio.addEventListener(
+      "ended",
+      function () {
+        this.currentTime = 0;
+        this.play();
+      },
+      false
+    );
+  }
+  myAudio.play();
+});
+// Background Music Pause
+document.getElementById("pause").addEventListener("click", () => {
+  document.getElementById("bgmusic_play").style.visibility = "visible";
+  document.getElementById("pause").style.visibility = "hidden";
+  myAudio.pause();
+});
 for (let index = 0; index < image.length; index++) {
   var random = Math.floor(Math.random() * image.length);
   block[index].src = image[random];
 }
-// function human_random() {
-//   var random = Math.floor(Math.random() * image.length);
-//   human.src = image[random];
-// }
-console.log(human.src);
+// Human Random
+human_random();
+function human_random() {
+  var random = Math.floor(Math.random() * image.length);
+  human.src = image[random];
+}
+
 block[0].addEventListener("click", () => {
   changeImage(0);
   block_0();

@@ -14,7 +14,6 @@ body {
   visibility: hidden;
   opacity: 1;
 }
-
 .popup .content {
   max-height: 30%;
   overflow: auto;
@@ -41,7 +40,7 @@ body {
   cursor: pointer;
   text-align: center;
 }
-#GameOver{
+#GameOver {
   position: absolute;
   right: 30%;
   top: 30%;
@@ -59,6 +58,6 @@ body {
   height: 25px;
 }
 .restart:hover,
-.home_btn:hover{
+.home_btn:hover {
   border: 2px solid black;
 }

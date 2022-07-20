@@ -15,7 +15,9 @@ body {
   cursor: pointer;
 }
 /* Restart Button */
-.restart_btn,#bgmusic_play, #pause {
+.restart_btn,
+#bgmusic_play,
+#pause {
   width: 150px;
   position: absolute;
   top: 8%;
@@ -72,13 +74,14 @@ body {
 .Win_text {
   width: 150px;
 }
-#pause,#bgmusic_play{
+#pause,
+#bgmusic_play {
   right: 90%;
   width: 90px;
   border: none;
 }
-#bgmusic_play{
-  width:70px;
+#bgmusic_play {
+  width: 70px;
 }
 @keyframes movement1 {
   0% {

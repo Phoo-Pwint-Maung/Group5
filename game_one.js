@@ -1,9 +1,9 @@
 let image = [
-  "http://127.0.0.1:5500/1)Squid_Game/image/pink_soldier.png",
-  "http://127.0.0.1:5500/1)Squid_Game/image/umbrella.jpg",
-  "http://127.0.0.1:5500/1)Squid_Game/image/mask.png",
-  "http://127.0.0.1:5500/1)Squid_Game/image/green.png",
-  "http://127.0.0.1:5500/1)Squid_Game/image/doll_girl.png",
+  "http://127.0.0.1:5500/image/pink_soldier.png",
+  "http://127.0.0.1:5500/image/umbrella.jpg",
+  "http://127.0.0.1:5500/image/mask.png",
+  "http://127.0.0.1:5500/image/green.png",
+  "http://127.0.0.1:5500/image/doll_girl.png",
 ];
 let human = document.getElementById("human");
 let block = document.getElementsByClassName("block");
@@ -34,15 +34,15 @@ myAudio.play();
     document.getElementById("pause").style.visibility = "hidden";
     myAudio.pause();
   });
-human_random();
+// human_random();
 for (let index = 0; index < image.length; index++) {
   var random = Math.floor(Math.random() * image.length);
   block[index].src = image[random];
 }
-function human_random() {
-  var random = Math.floor(Math.random() * image.length);
-  human.src = image[random];
-}
+// function human_random() {
+//   var random = Math.floor(Math.random() * image.length);
+//   human.src = image[random];
+// }
 console.log(human.src);
 block[0].addEventListener("click", () => {
   changeImage(0);

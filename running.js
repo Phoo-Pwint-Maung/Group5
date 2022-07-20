@@ -12,38 +12,38 @@ document.getElementById("start1").addEventListener("click", () => {
   document.getElementById("how_to_play_popup").style.visibility = "hidden";
   document.getElementById("green_light").play();
   document.getElementById("green_light_img").style.visibility = "visible";
-   doll_move = setInterval(() => {
-    if (
-      doll.src == "http://127.0.0.1:5500/1)Squid_Game/running_images/black.png"
-    ) {
-      doll.src = "http://127.0.0.1:5500/1)Squid_Game/running_images/red.png";
-      document.getElementById("red_light_img").style.visibility = "visible";
-      document.getElementById("green_light_img").style.visibility = "hidden";
-      document.getElementById("red_light").play();
-    } else if (
-      doll.src == "http://127.0.0.1:5500/1)Squid_Game/running_images/red.png"
-    ) {
-      doll.src = "http://127.0.0.1:5500/1)Squid_Game/running_images/black.png";
-      document.getElementById("red_light_img").style.visibility = "hidden";
-      document.getElementById("green_light_img").style.visibility = "visible";
-      document.getElementById("green_light").play();
-    }
-  }, 2500);
+  //  doll_move = setInterval(() => {
+  //   if (
+  //     doll.src == "http://127.0.0.1:5500/running_images/black.png"
+  //   ) {
+  //     doll.src = "http://127.0.0.1:5500/running_images/red.png";
+  //     document.getElementById("red_light_img").style.visibility = "visible";
+  //     document.getElementById("green_light_img").style.visibility = "hidden";
+  //     document.getElementById("red_light").play();
+  //   } else if (
+  //     doll.src == "http://127.0.0.1:5500/running_images/red.png"
+  //   ) {
+  //     doll.src = "http://127.0.0.1:5500/running_images/black.png";
+  //     document.getElementById("red_light_img").style.visibility = "hidden";
+  //     document.getElementById("green_light_img").style.visibility = "visible";
+  //     document.getElementById("green_light").play();
+  //   }
+  // }, 2500);
 });
 // Player Running Image Changing
 let running_image_change = (value) => {
   if (
     document.getElementsByClassName("player")[value].src ==
-    "http://127.0.0.1:5500/1)Squid_Game/running_images/right_leg.png"
+    "http://127.0.0.1:5500/running_images/right_leg.png"
   ) {
     document.getElementsByClassName("player")[value].src =
-      "http://127.0.0.1:5500/1)Squid_Game/running_images/left_leg.png";
+      "http://127.0.0.1:5500/running_images/left_leg.png";
   } else if (
     document.getElementsByClassName("player")[value].src ==
-    "http://127.0.0.1:5500/1)Squid_Game/running_images/left_leg.png"
+    "http://127.0.0.1:5500/running_images/left_leg.png"
   ) {
     document.getElementsByClassName("player")[value].src =
-      "http://127.0.0.1:5500/1)Squid_Game/running_images/right_leg.png";
+      "http://127.0.0.1:5500/running_images/right_leg.png";
   }
 };
 let count = 0;
@@ -66,7 +66,7 @@ window.addEventListener("keypress", (event) => {
       break;
   }
   // Game over condition
-  if (doll.src == "http://127.0.0.1:5500/1)Squid_Game/running_images/red.png") {
+  if (doll.src == "http://127.0.0.1:5500/running_images/red.png") {
     if (y == true) {
       
       setTimeout(() => {
